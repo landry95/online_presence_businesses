@@ -1,0 +1,150 @@
+
+// /*--------------------------------------------------------------
+// # Clients
+// --------------------------------------------------------------*/
+// .clients .clients-wrap {
+//     border-top: 1px solid #ececec;
+//     border-left: 1px solid #ececec;
+//   }
+  
+//   .clients .client-logo {
+//     padding: 20px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-right: 1px solid #ececec;
+//     border-bottom: 1px solid #ececec;
+//     overflow: hidden;
+//     background: #fff;
+//     height: 100px;
+//   }
+  
+//   .clients .client-logo img {
+//     transition: all 0.3s ease-in-out;
+//     height: 36px;
+//     -webkit-filter: grayscale(100%);
+//     filter: grayscale(100%);
+//   }
+  
+//   .clients .client-logo:hover img {
+//     -webkit-filter: none;
+//     filter: none;
+//     transform: scale(1.1);
+//   }
+  
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#btnEvent:hover{
+  background-color: #737373;
+  color: white;
+}
+#btnEvent::after{
+  content: "→";
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border-left: 1px solid #737373;
+  border-left: 1px solid #737373;
+  // background-color: rgb(36, 36, 36);
+  // color: white;
+}
+.ribbon {
+  background-color: #5BC8F7;
+}
+
+.ribbon::before {
+  content: "Regardez cette boite orange.";
+  background-color: #FFBA10;
+  border-color: black;
+  border-style: dotted;
+}
+
+
+
+
+/* Credits to https://bootsnipp.com/snippets/1d3X9 */
+
+.b-0 {
+  bottom: 0;
+}
+.bg-shadow {
+  background: rgba(76, 76, 76, 0);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(179, 171, 171, 0)), color-stop(49%, rgba(48, 48, 48, 0.37)), color-stop(100%, rgba(19, 19, 19, 0.8)));
+  background: linear-gradient(to bottom, rgba(179, 171, 171, 0) 0%, rgba(48, 48, 48, 0.71) 49%, rgba(19, 19, 19, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
+}
+.top-indicator {
+  right: 0;
+  top: 1rem;
+  bottom: inherit;
+  left: inherit;
+  margin-right: 1rem;
+}
+.overflow {
+  position: relative;
+  overflow: hidden;
+}
+.zoom img {
+  transition: all 0.2s linear;
+}
+.zoom:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+
+td {
+  padding-bottom: 18px;
+}

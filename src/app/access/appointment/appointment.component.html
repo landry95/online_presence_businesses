@@ -1,0 +1,421 @@
+<!-- <section style="background-color: #ECEBF0;" class="py-5"> -->
+<section class="py-5">
+
+    
+    <div class="container d-flex justify-content-center mt-0 mb-5"> <button type="button" class="btn btn-info p-2" data-toggle="modal" style="padding-right: 120px !important; padding-left: 120px !important;" data-target="#exampleModal"> Appointment Information
+        </button> 
+    </div>
+
+    <div class="wrapper" style="background-image: url('images/bg-registration-form-2.jpg');">
+        <div class="inner">
+            <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+                <h3><b>Appointment Form</b></h3>
+                <div class="form-group">
+                    <div class="form-wrapper">
+                        <label for="">First Name</label>
+                        <input type="text" class="form-control" [formControlName]="'firstname'">
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="">Last Name</label>
+                        <input type="text" class="form-control" [formControlName]="'lastname'">
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" [formControlName]="'email'">
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Phone number</label>
+                    <input type="number" class="form-control" [formControlName]="'phone'">
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Type of Service</label>
+                    <select class="form-control" [formControlName]="'type_of_service'" id="">
+                        <option value=""></option>
+                        <option value="Pedicure">Pedicure</option>
+                        <option value="Manicure">Manicure</option>
+                        <option value="Manicure">Fill-In</option>
+                        <option value="Manicure">Xaxing</option>
+                        <option value="Manicure">Massage</option>
+                        <option value="Manicure">Little Angels</option>
+                        <option value="Manicure">MAN</option>
+                        <option value="Manicure">Eyelash Extensions</option>
+                        <option value="Manicure">New Set</option>
+                    </select>
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Date and time</label>
+                    <input class="form-control" [owlDateTime]="dt1" [owlDateTimeTrigger]="dt1" [formControlName]="'time_of_service'" placeholder="Date & Time">
+                    <!-- <span [owlDateTimeTrigger]="dt1"><i class="fa fa-calendar" ></i></span> -->
+                    <owl-date-time #dt1></owl-date-time>
+                </div>
+                <!-- <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> I caccept the Terms of Use & Privacy Policy.
+                        <span class="checkmark"></span>
+                    </label>
+                </div> -->
+                <div class="alert">
+                    <span>We'll contact you soon</span>
+                </div>
+                <button>Book Now</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Button trigger modal -->
+    <div class="container pt-5 mt-5">
+        <!--Start code-->
+        <div class="row">
+            <div class="col-12 pb-5">
+                <!--SECTION START-->
+                <section class="row">
+                    <!--Start slider news-->
+                    <div class="col-12 col-md-6 pb-0 pb-md-3 pt-2 pr-md-1">
+                        <div id="featured" class="carousel slide carousel" data-ride="carousel">
+                            <!--dots navigate-->
+                            <ol class="carousel-indicators top-indicator">
+                                <li data-target="#featured" data-slide-to="0" class="active"></li>
+                                <li data-target="#featured" data-slide-to="1"></li>
+                                <li data-target="#featured" data-slide-to="2"></li>
+                                <li data-target="#featured" data-slide-to="3"></li>
+                            </ol>
+                            
+                            <!--carousel inner-->
+                            <div class="carousel-inner">
+                                <!--Item slider-->
+                                <div class="carousel-item active">
+                                    <div class="card border-0 rounded-0 text-light overflow zoom">
+                                        <div class="position-relative">
+                                            <!--thumbnail img-->
+                                            <div class="ratio_left-cover-1 image-wrapper">
+                                                <a href="#">
+                                                    <img class="img-fluid w-100"
+                                                        src="assets/about/a.jpg"
+                                                        alt="#">
+                                                </a>
+                                            </div>
+                                            <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                                <!--title-->
+                                                <a href="#">
+                                                    <h2 class="h3 post-title text-white my-1">Queen nails is the perfect place to be</h2>
+                                                </a>
+                                                <!-- meta title -->
+                                                <div class="news-meta">
+                                                    <span class="news-author">Join us <a class="text-white font-weight-bold" href="#">and enjoy</a></span>
+                                                    <span class="news-date">aaaaaaaa</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--Item slider-->
+                                <div class="carousel-item">
+                                    <div class="card border-0 rounded-0 text-light overflow zoom">
+                                        <div class="position-relative">
+                                            <!--thumbnail img-->
+                                            <div class="ratio_left-cover-1 image-wrapper">
+                                                <a href="#">
+                                                    <img class="img-fluid w-100"
+                                                        src="assets/about/b.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                                <!--title-->
+                                                <a href="#">
+                                                    <h2 class="h3 post-title text-white my-1">At vero eos et accusamus et iusto odio dignissimos</h2>
+                                                </a>
+                                                <!-- meta title -->
+                                                <div class="news-meta">
+                                                    <span class="news-author">cccc <a class="text-white font-weight-bold" href="#">zzzzzzzzz</a></span>
+                                                    <span class="news-date">xxxxxxx</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--Item slider-->
+                                <div class="carousel-item">
+                                    <div class="card border-0 rounded-0 text-light overflow zoom">
+                                        <div class="position-relative">
+                                            <!--thumbnail img-->
+                                            <div class="ratio_left-cover-1 image-wrapper">
+                                                <a href="#">
+                                                    <img class="img-fluid w-100"
+                                                        src="assets/about/c.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                                <!--title-->
+                                                <a href="#">
+                                                    <h2 class="h3 post-title text-white my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, s</h2>
+                                                </a>
+                                                <!-- meta title -->
+                                                <div class="news-meta">
+                                                    <span class="news-author">eeee <a class="text-white font-weight-bold" href="#">eeeeeeeeeeee</a></span>
+                                                    <span class="news-date">wwwwwwwww</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--Item slider-->
+                                <div class="carousel-item">
+                                    <div class="card border-0 rounded-0 text-light overflow zoom">
+                                        <div class="position-relative">
+                                            <!--thumbnail img-->
+                                            <div class="ratio_left-cover-1 image-wrapper">
+                                                <a href="#">
+                                                    <img class="img-fluid w-100"
+                                                        src="assets/about/d.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                                <!--title-->
+                                                <a href="#">
+                                                    <h2 class="h3 post-title text-white my-1">At vero eos et accusamus et iusto odio dignissimos ducimus qui</h2>
+                                                </a>
+                                                <!-- meta title -->
+                                                <div class="news-meta">
+                                                    <span class="news-author">bb <a class="text-white font-weight-bold" href="#">xxx</a></span>
+                                                    <span class="news-date">accusamus</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end item slider-->
+                            </div>
+                            <!--end carousel inner-->
+                        </div>
+                        
+                        <!--navigation-->
+                        <a class="carousel-control-prev" href="#featured" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#featured" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!--End slider news-->
+                    
+                    <!--Start box news-->
+                    <div class="col-12 col-md-6 pt-2 pl-md-1 mb-3 mb-lg-4">
+                        <div class="row">
+                            <!--news box-->
+                            <div class="col-6 pb-1 pt-0 pr-1">
+                                <div class="card border-0 rounded-0 text-white overflow zoom">
+                                    <div class="position-relative">
+                                        <!--thumbnail img-->
+                                        <div class="ratio_right-cover-2 image-wrapper">
+                                            <a href="#">
+                                                <img class="img-fluid"
+                                                    src="assets/about/e.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                            <!-- category -->
+                                            <a class="p-1 badge badge-primary rounded-0" href="#">Nails</a>
+
+                                            <!--title-->
+                                            <a href="#">
+                                                <h2 class="h5 text-white my-1">Dou you want to live a fantastic experience?</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--news box-->
+                            <div class="col-6 pb-1 pl-1 pt-0">
+                                <div class="card border-0 rounded-0 text-white overflow zoom">
+                                    <div class="position-relative">
+                                        <!--thumbnail img-->
+                                        <div class="ratio_right-cover-2 image-wrapper">
+                                            <a href="#">
+                                                <img class="img-fluid"
+                                                    src="assets/about/f.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                            <!-- category -->
+                                            <a class="p-1 badge badge-primary rounded-0" href="#">Nails</a>
+                                            <!--title-->
+                                            <a href="#">
+                                                <h2 class="h5 text-white my-1">Dou you want to live a fantastic experience?</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--news box-->
+                            <div class="col-6 pb-1 pr-1 pt-1">
+                                <div class="card border-0 rounded-0 text-white overflow zoom">
+                                    <div class="position-relative">
+                                        <!--thumbnail img-->
+                                        <div class="ratio_right-cover-2 image-wrapper">
+                                            <a href="#">
+                                                <img class="img-fluid"
+                                                    src="assets/about/g.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                            <!-- category -->
+                                            <a class="p-1 badge badge-primary rounded-0" href="#">Nails</a>
+                                            <!--title-->
+                                            <a href="#">
+                                                <h2 class="h5 text-white my-1">Dou you want to live a fantastic experience?</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--news box-->
+                            <div class="col-6 pb-1 pl-1 pt-1">
+                                <div class="card border-0 rounded-0 text-white overflow zoom">
+                                    <div class="position-relative">
+                                        <!--thumbnail img-->
+                                        <div class="ratio_right-cover-2 image-wrapper">
+                                            <a href="#">
+                                                <img class="img-fluid"
+                                                    src="assets/about/a.jpg"
+                                                    alt="adscent">
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+                                            <!-- category -->
+                                            <a class="p-1 badge badge-primary rounded-0" href="#">Nails</a>
+                                            <!--title-->
+                                            <a href="#">
+                                                <h2 class="h5 text-white my-1">Dou you want to live a fantastic experience?</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end news box-->
+                        </div>
+                    </div>
+                    <!--End box news-->
+                </section>
+                <!--END SECTION-->
+            </div>
+        </div>
+        <!--end code-->
+    </div>
+
+</section>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Appointment Informations</h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class="fa fa-close"></i></span> </button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-0">
+                    <div class="col-md-8 border-right">
+                        <div class="status p-3">
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex flex-column"> <span class="heading d-block">Pedicure</span> <span class="subheadings">Make nails</span> </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="heading d-block">Time/Date</span> 
+                                                <span class="subheadings">Mon - Wed: 9:30 AM - 7:00PM</span> 
+                                                <span class="subheadings">Thur - Fri: 9:30 AM - 7:30 PM</span> 
+                                                <span class="subheadings">Sat: 9:00 AM - 6:30 PM</span> 
+                                                <span class="subheadings">Sun: 10:00 AM - 6:00 PM</span> 
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column"> <span class="heading d-block">Status</span> <span class="subheadings"><i class="dots"></i> We're always available for you</span> </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex flex-column"> <span class="heading d-block">Manucure</span> <span class="subheadings">Make nails</span> </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="heading d-block">Referring workers</span> 
+                                                <span class="subheadings">Name</span>
+                                                <span class="subheadings">Name</span>
+                                            </div>
+                                        </td>
+                                        <td> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex flex-column"> <span class="heading d-block">Contact</span> <span class="subheadings"> <small>Address 1 - 23 E. Prospect Street, City - Waldwick, State - NJ</small> </span> </div>
+                                        </td>
+                                        <td colspan="2">
+                                            <div class="d-flex flex-column"> <span class="heading d-block">Reason of visiting</span> <span class="subheadings">.</span> </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex flex-column"> <span class="heading d-block">Direction</span> <span class="d-block subheadings">Get direction by using</span> <span class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/google-maps.png" class="rounded" width="30" /> <img src="https://img.icons8.com/color/100/000000/pittsburgh-map.png" class="rounded" width="30" /> </span> </div>
+                                        </td>
+                                        <td colspan="2">
+                                            <div class="d-flex flex-column"> <span class="heading d-block">Queen Nails Gallary</span> <span class="d-flex flex-row gallery"> <img src="assets/about/1.jpg" width="50" class="rounded"> <img src="assets/about/2.jpg" width="50" class="rounded"> <img src="assets/about/3.jpg" width="50" class="rounded"> </span> </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-2 text-center">
+                            <div class="profile"> <img src="assets/about/1.jpg" width="100" class="rounded-circle img-thumbnail"> <span class="d-block mt-3 font-weight-bold">Name Business owner</span> </div>
+                            <div class="about-doctor">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column"> <span class="heading d-block">Education</span> <span class="subheadings"></span> </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column"> <span class="heading d-block">Language</span> <span class="subheadings">English</span> </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column"> <span class="heading d-block">Citation</span> <span class="subheadings"></span> </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column"> <span class="heading d-block">Specialist</span> <span class="subheadings">Nails</span> </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

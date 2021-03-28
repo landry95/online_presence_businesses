@@ -1,0 +1,93 @@
+
+<section style="background-image: url('/assets/about/slide.jpg');">
+    <div class="page-header" style="opacity: 60%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>About Us</h2>
+                </div>
+                <div class="col-12">
+                    <!-- <a href="">Home</a> -->
+                    <a href="">About Our Team</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="about-img">
+                    <img src="assets/about/abou.jpg" alt="Image">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+                <div class="section-header text-left">
+                    <h2>Learn More About Us</h2>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Pampering your body from head to toe is a great way to give yourself the ultimate relaxation treatment. This is why our nail salon offers a vast variety of indulging services for our clients.
+                    </p>
+                    <p>
+                        Good nail design is an essential part of looking good. Our pedicures will polish and beautify your toenails and feet, and our manicures will do the same for your hands. We will exfoliate the dead skin on your feet or hands, leaving your skin smooth and clean to compliment your beautiful nail design. Manicures, pedicures and gel nails are some of the most popular beauty treatments today. Our beautician will give you undivided attention to decorate your nails to your liking.
+                    </p>
+                    <p>
+                        For the best results in these treatments, you should come to Queen Nails. Our nail salon is staffed by professionals who can do an excellent job with any beauty treatment you desire.
+                    </p>
+                    <p>
+                        Reservations are recommended, but walk-ins are always welcome. Come visit us for a manicure, pedicure or waxing service soon, and revel in the Queen Nails!
+                    </p>
+                    <a class="btn" href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="team">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2><b>Statistics</b></h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="assets/stats.jpg"   alt="stats Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="durations">
+    <div class="container">
+        <div class="section-header text-center pb-4 pt-5">
+            <h3>Durations of our diffrent services</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">SERVICE</th>
+                        <th scope="col">DURATION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let d of duration; let i=index">
+                        <th scope="row"> {{i+1}} </th>
+                        <td> {{d.name}} </td>
+                        <td> {{ d.duration }} </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>
